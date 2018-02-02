@@ -12,7 +12,9 @@ namespace AutomobileManagerApp
     class Owner
     {
         public byte OwnerID { get; set; }
+
         public string Username { get; set; }
+
         public List<Vehicle> Vehicle { get; set; }
     }
 }

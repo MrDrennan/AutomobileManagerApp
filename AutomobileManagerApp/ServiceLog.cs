@@ -7,30 +7,24 @@ using System.Threading.Tasks;
 namespace AutomobileManagerApp
 {
     /// <summary>
-    /// Represents repair and upgrade records of a vehicle
+    /// Represents service records for each type of service of each vehicle
     /// </summary>
-    class RepairUpgradeLog
+    class ServiceLog
     {
-        public ushort RepairUpgradeLogID { get; set; }
-
-        public string Name { get; set; }
-
-        public string Description { get; set; }
+        public ushort ServiceLogID { get; set; }
 
         public DateTime Date { get; set; }
 
-        // TODO: Change this column to money data type in the database. Default to 0.
         public double Cost { get; set; }
 
         /// <summary>
-        /// Notes the user can write about each repair and upgrade
+        /// notes the user can write about each service
         /// </summary>
         public string Notes { get; set; }
 
         /// <summary>
-        /// Parts of each repair and upgrade that user can keep track of
+        /// Parts for each service visit that user can keep track of
         /// </summary>
         public List<Part> Parts { get; set; }
-
     }
 }
