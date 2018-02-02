@@ -20,7 +20,7 @@ namespace AutomobileManagerApp
         public DateTime Date { get; set; }
 
         // TODO: Change this column to money data type in the database. Default to 0.
-        public double Cost { get; set; }
+        public double? Cost { get; set; }
 
         /// <summary>
         /// Notes the user can write about each repair and upgrade

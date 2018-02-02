@@ -15,7 +15,7 @@ namespace AutomobileManagerApp
 
         public DateTime Date { get; set; }
 
-        public double Cost { get; set; }
+        public double? Cost { get; set; }
 
         /// <summary>
         /// notes the user can write about each service

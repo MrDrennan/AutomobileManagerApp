@@ -17,7 +17,7 @@ namespace AutomobileManagerApp
 
         public string Description { get; set; }
 
-        public double Cost { get; set; }
+        public double? Cost { get; set; }
 
         public DateTime DatePurchased { get; set; }
 
