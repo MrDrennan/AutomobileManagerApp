@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,9 +10,9 @@ namespace AutomobileManagerApp
     /// <summary>
     /// Represents service records for each type of service of each vehicle
     /// </summary>
-    class ServiceLog
+    public class ServiceLog
     {
-        public ushort ServiceLogID { get; set; }
+        public short ServiceLogId { get; set; }
 
         public DateTime Date { get; set; }
 

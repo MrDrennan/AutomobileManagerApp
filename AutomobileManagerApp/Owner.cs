@@ -9,9 +9,9 @@ namespace AutomobileManagerApp
     /// <summary>
     /// Represents an Owner of vehicles
     /// </summary>
-    class Owner
+    public class Owner
     {
-        public byte OwnerID { get; set; }
+        public byte OwnerId { get; set; }
 
         public string Username { get; set; }
 

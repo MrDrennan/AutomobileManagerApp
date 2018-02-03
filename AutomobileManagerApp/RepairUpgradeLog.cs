@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,9 +10,9 @@ namespace AutomobileManagerApp
     /// <summary>
     /// Represents repair and upgrade records of a vehicle
     /// </summary>
-    class RepairUpgradeLog
+    public class RepairUpgradeLog
     {
-        public ushort RepairUpgradeLogID { get; set; }
+        public short RepairUpgradeLogId { get; set; }
 
         public string Name { get; set; }
 

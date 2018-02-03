@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,9 +10,11 @@ namespace AutomobileManagerApp
     /// <summary>
     /// Represents a Vehicle that can be tracked by an owner
     /// </summary>
-    class Vehicle
+    public class Vehicle
     {
-        public string VIN { get; set; }
+        public byte VehicleId { get; set; }
+
+        public string Name { get; set; }
 
         public string Make { get; set; }
 

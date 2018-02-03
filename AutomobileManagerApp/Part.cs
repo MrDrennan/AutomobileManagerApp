@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,9 +10,9 @@ namespace AutomobileManagerApp
     /// <summary>
     /// Represents parts installed in a vehicle for service visit upgrade or repair
     /// </summary>
-    class Part
+    public class Part
     {
-        public ushort PartID { get; set; }
+        public short PartId { get; set; }
 
         public string Name { get; set; }
 
